@@ -2,13 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Weathernaut</title>
+    <title>weathernaut</title>
+    <link href="{{ url_for('static',filename='styles/index.css') }}" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}">
 </head>
 <body>
-    <label for="city">Your City Name </label>
-    <form action="/" method=post>
-        <input name="city" type="text">
-        <input type="submit">
+    <div class="container">
+    <label for="city">Enter your city name here</label> </label>
+    <form action="/" method=post class="centered">
+        <input name="city" type="text" placeholder="e.g Berlin">
+        <input type="submit" value="Fetch">
     </form>
+    </div>
 </body>
 </html>
