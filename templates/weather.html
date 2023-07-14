@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Weather for {{city}}</title>
+    <link href="{{ url_for('static',filename='styles/weather.css') }}" rel="stylesheet">
 </head>
 <body>
-<h1>{{city}}</h1>
-<h3>Today it's {{main}}.</h3>
-<h3>Temperature: {{temperature}} <br>Min: {{min}} <br>Max: {{max}} <br><br>Feels like: {{feels}}</h3>
+    <p>City: {{city}} <br>Main: {{main}}<br>Temperature: {{temperature}}<br>Min: {{min}}<br>Max: {{max}}<br>Feels: {{feels}}<br>Description: {{description}}<br>Humidity: {{humidity}}<br>WindSpeed: {{wind_speed}}<br>Pressure: {{pressure}}<br>Sunrise: {{sunrise}}<br>Sunset: {{sunset}}<br>Timezone: {{timezone}}</p>
 </body>
 </html>
